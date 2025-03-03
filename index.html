@@ -5,72 +5,275 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GuateEcoTech</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Open+Sans&display=swap"
         rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Open Sans', sans-serif;
-            background-color: #F5F5F5;
-            color: #333333;
-            margin: 0;
-            padding: 0;
-        }
-
-        header {
-            background-color: #4CAF50;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-
-        h1 {
-            font-family: 'Poppins', sans-serif;
-            font-size: 2.5rem;
-        }
-
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-
-        .section {
-            margin-bottom: 40px;
-        }
-
-        .section h2 {
-            color: #4CAF50;
-            font-family: 'Poppins', sans-serif;
-        }
-
-        footer {
-            background-color: #333333;
-            color: white;
-            text-align: center;
-            padding: 10px;
-            margin-top: 40px;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <header>
-        <h1>GuateEcoTech</h1>
-        <p>Innovación y Ecología para un Futuro Sostenible</p>
+    <!-- Header -->
+    <header class="text-white text-center py-5"
+        style="background-image: url('images/header.jpg'); background-size: cover;">
+        <div class="container">
+            <h1 class="display-4">GuateEcoTech</h1>
+            <p class="lead">Innovación y Ecología para un Futuro Sostenible</p>
+        </div>
     </header>
-    <div class="container">
-        <section class="section">
-            <h2>Misión</h2>
-            <p>Desarrollar y proveer herramientas tecnológicas y ecológicas de bajo costo...</p>
-        </section>
-        <section class="section">
-            <h2>Visión</h2>
-            <p>Ser la marca líder en tecnología verde en el país...</p>
-        </section>
-    </div>
-    <footer>
-        <p>&copy; 2023 GuateEcoTech. Todos los derechos reservados.</p>
+
+    <!-- Navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
+        <div class="container">
+            <a class="navbar-brand" href="#">GuateEcoTech</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#antecedentes">Antecedentes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#objetivos">Objetivos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#plan">Plan de Acción</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#modelo">Modelo de Negocio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#entorno">Análisis del Entorno</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#vision">Visión y Misión</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#costos">Costos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Inicio -->
+    <section id="inicio" class="bg-light py-5">
+        <div class="container text-center">
+            <h2 class="display-5">Bienvenidos a GuateEcoTech</h2>
+            <p class="lead">Soluciones tecnológicas y ecológicas para un futuro sostenible.</p>
+        </div>
+    </section>
+
+    <!-- Antecedentes -->
+    <section id="antecedentes" class="py-5" data-aos="fade-up">
+        <div class="container">
+            <h2 class="text-center mb-4">Antecedentes</h2>
+            <div class="row align-items-stretch"> <!-- Usamos align-items-stretch para igualar la altura -->
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body d-flex flex-column"> <!-- Flexbox para alinear el contenido -->
+                            <h3 class="card-title mb-3">Justificación</h3>
+                            <p class="card-text flex-grow-1">GuateEcoTech surge ante la necesidad de dotar a los hogares
+                                y a las instituciones guatemaltecas de soluciones tecnológicas y ecológicas, como kits
+                                de invernaderos automatizados y proyectos de robótica educativa.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body d-flex flex-column"> <!-- Flexbox para alinear el contenido -->
+                            <h3 class="card-title mb-3">Análisis de Necesidades</h3>
+                            <p class="card-text flex-grow-1">Cultivo en espacios reducidos: Muchas familias y
+                                comunidades necesitan métodos eficientes para cultivar en balcones, terrazas, etc.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-md-12 text-center">
+                    <img src="images/justificacion.jpg" alt="Justificación" class="img-fluid rounded shadow">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Objetivos y Metas -->
+    <section id="objetivos" class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Objetivos y Metas</h2>
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center mb-4 mb-md-0">
+                    <img src="images/objetivos.jpg" alt="Objetivos" class="img-fluid rounded shadow">
+                </div>
+                <div class="col-md-6">
+                    <h3 class="mb-3">Nuestro Objetivo Principal</h3>
+                    <p class="lead">Crear una plataforma en línea donde se comercialicen kits ecológicos (invernaderos
+                        automatizados y robótica) y se ofrezca asesoría técnica.</p>
+                    <h4 class="mt-4 mb-3">Metas Clave</h4>
+                    <ul class="list-unstyled">
+                        <li class="mb-3">
+                            <i class="fas fa-check-circle text-success mr-2"></i>Atraer al menos 3 instituciones
+                            educativas en el primer semestre.
+                        </li>
+                        <li class="mb-3">
+                            <i class="fas fa-check-circle text-success mr-2"></i>Capacitar a 50 voluntarios en un año.
+                        </li>
+                        <li class="mb-3">
+                            <i class="fas fa-check-circle text-success mr-2"></i>Reducir en un 20% los costos de
+                            producción utilizando materiales reutilizables.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Justificaciones y Plan de Acción -->
+    <section id="plan" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Justificaciones y Plan de Acción</h2>
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <div class="mb-4">
+                        <h3 class="mb-3">¿Por qué?</h3>
+                        <p class="lead">La justificación radica en la búsqueda de soluciones sostenibles para la
+                            problemática de escasez de espacios de cultivo, la carencia de herramientas de aprendizaje
+                            STEM y la necesidad de optimizar recursos naturales (agua, energía).</p>
+                    </div>
+                    <div class="mb-4">
+                        <h3 class="mb-3">¿Para qué?</h3>
+                        <p class="lead">Facilitar la educación práctica: Instituciones pueden implementar proyectos de
+                            robótica ecológica.</p>
+                    </div>
+                    <div class="mb-4">
+                        <h3 class="mb-3">¿Cómo lo Haremos?</h3>
+                        <p class="lead">Desarrollo de plataforma en línea: E-commerce con pasarelas de pago (PayPal,
+                            PayNexus, etc.).</p>
+                    </div>
+                </div>
+                <div class="col-md-6 text-center">
+                    <img src="images/plan.jpg" alt="Plan de Acción" class="img-fluid rounded shadow">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nombre Comercial, Imagen y Modelo de Negocio -->
+    <section id="modelo" class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Nombre Comercial, Imagen y Modelo de Negocio</h2>
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center mb-4 mb-md-0">
+                    <img src="images/logo.jpg" alt="Logo GuateEcoTech" class="img-fluid rounded shadow">
+                </div>
+                <div class="col-md-6">
+                    <h3 class="mb-3">¿Qué representa GuateEcoTech?</h3>
+                    <p class="lead">El nombre “GuateEcoTech” refleja la esencia de nuestra marca:</p>
+                    <ul class="list-unstyled">
+                        <li class="mb-3">
+                            <strong>Guate:</strong> Representa nuestro origen guatemalteco y nuestro compromiso con la
+                            identidad local.
+                        </li>
+                        <li class="mb-3">
+                            <strong>Eco:</strong> Simboliza nuestro enfoque en la ecología y la sostenibilidad, pilares
+                            fundamentales de nuestro negocio.
+                        </li>
+                        <li class="mb-3">
+                            <strong>Tech:</strong> Destaca la innovación tecnológica, la automatización y la robótica
+                            que impulsan nuestros productos.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Análisis del Entorno -->
+    <section id="entorno" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Análisis del Entorno</h2>
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <div class="mb-4">
+                        <h4>Fortalezas</h4>
+                        <ul class="list-unstyled">
+                            <li><i class="fas fa-check-circle text-success mr-2"></i>Enfoque ecológico y tecnología
+                                Arduino.</li>
+                            <li><i class="fas fa-check-circle text-success mr-2"></i>Uso de materiales reutilizados
+                                (costos más bajos).</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4>Debilidades</h4>
+                        <ul class="list-unstyled">
+                            <li><i class="fas fa-exclamation-circle text-warning mr-2"></i>Poco conocimiento inicial de
+                                la marca.</li>
+                            <li><i class="fas fa-exclamation-circle text-warning mr-2"></i>Logística de envío en zonas
+                                rurales.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <img src="images/foda.jpg" alt="Análisis FODA" class="img-fluid rounded">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Visión, Misión, Objetivos y Organización -->
+    <section id="vision" class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Visión, Misión, Objetivos y Organización</h2>
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <img src="images/vision.jpg" alt="Visión y Misión" class="img-fluid rounded">
+                </div>
+                <div class="col-md-6">
+                    <h3>Visión</h3>
+                    <p>Ser la empresa líder en Guatemala en la venta de kits de agricultura urbana automatizada y
+                        robótica
+                        ecológica, alcanzando el reconocimiento regional como impulsora de la transformación sostenible.
+                    </p>
+                    <h3>Misión</h3>
+                    <p>Proveer soluciones tecnológicas y ecológicas para el cultivo doméstico y la educación, enfocadas
+                        en la
+                        reutilización de materiales y la optimización de recursos (agua, energía).</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Área de Aprovisionamiento, Producción y Costos -->
+    <section id="costos" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Área de Aprovisionamiento, Producción y Costos</h2>
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h3>Estudio de Proveedores</h3>
+                    <p>Componentes Electrónicos: Se podrían adquirir en distribuidoras locales o en portales como
+                        Alibaba/AliExpress para sensores (temperatura, humedad, etc.).</p>
+                    <h3>Costos Proyectados</h3>
+                    <p>Costos Fijos: Hosting y dominio web (aprox. Q800-Q1000 anuales).</p>
+                </div>
+                <div class="col-md-6">
+                    <img src="images/proveedores.jpg" alt="Proveedores" class="img-fluid rounded">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Contacto</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-6 text-center">
+                    <h3>Información del Estudiante</h3>
+                    <p><strong>Apellidos:</strong> Lopez Vallecillo</p>
+                    <p><strong>Nombres:</strong> Esdraz</p>
+                    <p><strong>Carné:</strong> 17009396</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-secondary text-white text-center py-3">
+        <div class="container">
+            <p>&copy; 2023 GuateEcoTech. Todos los derechos reservados.</p>
+        </div>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
